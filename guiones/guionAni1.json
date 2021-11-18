@@ -1,0 +1,23 @@
+{   "audio":"audios/audio.mp3",
+    "modelo":"modelos/Pruebas tp/PruebaLuz.glb",
+    "fondo":"rgb(0,0,0)",
+    "time":"10",
+    "data" :
+        [
+           {
+                "tiempo":"00:00",
+                "camara":"Cam1",
+                "target":"Mira1",
+                "nombre":"vista uno",
+                "ani":"Ani2"
+           },
+           {
+                "tiempo":"00:10",
+                "duracion":"1000",
+                "camara":"Mira1",
+                "target":"Cam1",
+                "nombre":"vista dos",
+                "ani":"SphereAction"
+           }
+      ]
+}
