@@ -78,6 +78,7 @@ export class Objeto{
         this.ani;
         this.clip;
         this.action;
+        this.name;
         //this.angulo = 0;
         this.objeto = undefined;//new THREE.Object3D();
         this.modeloCargado = false;
@@ -102,11 +103,27 @@ export class Objeto{
     }
 
     playAnimation(nombre){
-        this.clip = THREE.AnimationClip.findByName(this.objeto.animations, nombre);
-        console.log(nombre);
-        this.action = this.ani.clipAction(this.clip);
-        this.action.setLoop(THREE.LoopOnce);
-        this.action.play().reset();
-        //this.ani.clipAction(this.clip).play();
+        if((this.action!=null) && (nombre != this.name)){ //(nombre.localeCompare(this.action.name) != 0)){
+            this.clip = THREE.AnimationClip.findByName(this.objeto.animations, nombre);
+            console.log(nombre);
+            console.log(this.name);
+            this.action.stop();
+            this.action.reset();
+            this.action = this.ani.clipAction(this.clip);
+            this.name = nombre;
+            //this.action.setStop = true;
+            this.action.setLoop(THREE.LoopOnce);
+            this.action.clampWhenFinished = true;
+            this.action.play();//.reset();
+            //this.ani.clipAction(this.clip).play();
+        }else if(this.name == null){
+            this.clip = THREE.AnimationClip.findByName(this.objeto.animations, nombre);
+            console.log("wasd");
+            this.action = this.ani.clipAction(this.clip);
+            this.name = nombre;
+            this.action.setLoop(THREE.LoopOnce);
+            this.action.clampWhenFinished = true;
+            this.action.play();
+        }
     }
 }

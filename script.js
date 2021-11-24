@@ -3,7 +3,7 @@ import {Mundo} from './Mundo.js'
 import {Objeto} from './Objeto.js'
 
 
-var nombre_guion = "guiones/guionAni.json";
+var nombre_guion = "guiones/guionAni2.json";
 var mundo;
 var cubo;
 var objeto;
@@ -13,7 +13,7 @@ var audio;
 var tecla;
 function inicializar() {
     mundo = new Mundo();
-    mundo.iluminar();
+    //mundo.iluminar();
     mundo.crearOrbitControl();
 
     //Añade el evento keypress al archivo

@@ -1,0 +1,77 @@
+{   "audio":"audios/Corto.mp3",
+    "modelo":"modelos/Pruebas tp/tpChanchitosPrototipo8.glb",
+    "fondo":"rgb(125,125,255)",
+    "time":"10",
+    "data" :
+        [
+           {
+                "tiempo":"00:00",
+                "camara":"CamChanchoChiquito",
+                "target":"MiraChanchoChiquito",
+                "nombre":"vista inicial",
+                "ani":"AniInii"
+           },
+           {
+            "tiempo":"00:01",
+            "duracion":"7000",
+            "camara":"Cam1",
+            "target":"Mira1",
+            "nombre":"Zoom out",
+            "ani":"AniInii"
+            },
+           {
+               "tiempo":"00:08",
+               "duracion":"1000",
+               "camara":"CamChanchoChiquito",
+               "target":"MiraChanchoChiquito",
+               "nombre":"rotacion 1 con primer plano al chanchito",
+               "ani":"Ang1"
+           },
+           {
+               "tiempo":"00:19",
+               "camara":"CamLobo",
+               "target":"MiraLobo",
+               "nombre":"primer plano lobo",
+               "ani":"Ang1"
+           },
+           {
+               "tiempo":"00:26",
+               "duracion":"5000",
+               "camara":"CamViento",
+               "target":"MiraViento",
+               "nombre":"travel viento",
+               "ani":"Ang1"
+           },
+           {
+            "tiempo":"00:31",
+            "duracion":"8000",
+            "camara":"CamTecho1",
+            "target":"MiraTecho1",
+            "nombre":"travel viento-techo",
+            "ani":"Ang1"
+            },
+            {
+                "tiempo":"00:39",
+                "duracion":"3000",
+                "camara":"CamTechoFinal",
+                "target":"MiraTechoFinal",
+                "nombre":"travel techo",
+                "ani":"Ang1"
+            },
+            {
+                "tiempo":"00:43",
+                "duracion":"1000",
+                "camara":"CamChanchosGeneral",
+                "target":"MiraChanchosGeneral",
+                "nombre":"plano general chanchos",
+                "ani":"Ang1"
+            },
+            {
+                "tiempo":"00:58",
+                "camara":"Cam1",
+                "target":"Mira1",
+                "nombre":"plano general chancho mayor",
+                "ani":"Ang2"
+            }
+      ]
+}

@@ -201,7 +201,7 @@ export class Movimiento{
             }
 
             this.siguienteTiempo = this.encontrarSiguienteTiempo(indice);
-
+            //if(objeto.action!=null) objeto.action.reset();
             objeto.playAnimation(this.guion[indice].ani);
 
 

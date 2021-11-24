@@ -8,7 +8,7 @@ import {Objeto} from './Objeto.js';
 export class Mundo{
     constructor(){
         this.objeto;
-        this.camara = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight,1,1000);
+        this.camara = new THREE.PerspectiveCamera(20, window.innerWidth/window.innerHeight,1,1000);
         this.camara.position.z = 5;
         //Esta configuración hacer que las animaciones loopeen constantemente
         //THREE.LoopRepeat;
@@ -69,10 +69,10 @@ export class Mundo{
 		this.controls.minDistance = 1;
 		this.controls.maxDistance = 1000;
         //Cosas que le metí para que sólo se pueda controlar con el guion
-        this.controls.enableKeys = false;
+        /*this.controls.enableKeys = false;
         this.controls.enablePan = false;
         this.controls.enableRotate = false;
-        this.controls.enableZoom = false;
+        this.controls.enableZoom = false;*/
     }
     iluminar(){
         //this.escena.add( new THREE.AmbientLight( 0xffffff ) );
@@ -97,6 +97,7 @@ export class Mundo{
     renderizar(){
         if(this.objeto.modeloCargado){
             this.objeto.update(this.clock);
+            //if (this.objeto.action.time>=this.objeto.clip.duration)this.objeto.action.paused = true;
             this.renderizador.render( this.escena, this.camara );
         }
         //if (this.objeto.mixer!=null)
