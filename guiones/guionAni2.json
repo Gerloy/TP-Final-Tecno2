@@ -1,5 +1,5 @@
 {   "audio":"audios/Corto.mp3",
-    "modelo":"modelos/Pruebas tp/tpChanchitosPrototipo8.glb",
+    "modelo":"modelos/Pruebas tp/TPChanchitosFinal.glb",
     "fondo":"rgb(125,125,255)",
     "time":"10",
     "data" :
@@ -67,10 +67,26 @@
                 "ani":"Ang1"
             },
             {
+                "tiempo":"00:50",
+                "duracion":"500",
+                "camara":"CamChanchoDelMedio",
+                "target":"MiraChanchoDelMedio",
+                "nombre":"habla chancho del medio",
+                "ani":"Ang1"
+            },
+            {
                 "tiempo":"00:58",
-                "camara":"Cam1",
-                "target":"Mira1",
+                "camara":"CamChanchoMayor",
+                "target":"MiraChanchoMayor",
                 "nombre":"plano general chancho mayor",
+                "ani":"Ang2"
+            },
+            {
+                "tiempo":"01:00",
+                "camara":"ZoomFogata",
+                "duracion":"10000",
+                "target":"MiraChanchoMayor",
+                "nombre":"zoomin a la fogata",
                 "ani":"Ang2"
             }
       ]
